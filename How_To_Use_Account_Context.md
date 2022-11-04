@@ -11,7 +11,7 @@ add web 3 wallet
 nextjs 12
 ```js
 import {AccountWrapper} from "../context/account"
-<!-- web 3 wallet for blockchian -->
+// web 3 wallet for blockchian 
 import { Web3Modal } from '@web3modal/react'
 ```
  config web3modal
@@ -28,9 +28,9 @@ import { Web3Modal } from '@web3modal/react'
 ```
 warpper account
 ```js
-<!-- web 3 wallet for blockchian -->
+// web 3 wallet for blockchian
 <Web3Modal config={config} />
-<!-- user Account for client login -->
+// user Account for client login 
 <AccountWrapper>
   <Component {...pageProps} />
 </AccountWrapper>
@@ -46,9 +46,9 @@ import WalletProvider from '../components/providers/WalletProvider'
 
 ```jsx
 <div>
-<!-- web 3 wallet for blockchian -->
+// web 3 wallet for blockchian 
   <WalletProvider />
-<!-- user Account for client login -->
+// user Account for client login 
   <AccountWrapper>
     {children}
   </AccountWrapper>
