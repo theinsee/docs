@@ -28,9 +28,9 @@ import { Web3Modal } from '@web3modal/react'
 ```
 warpper account
 ```js
-// web 3 wallet for blockchian
+<!--  web 3 wallet for blockchian -->
 <Web3Modal config={config} />
-// user Account for client login 
+<!--  user Account for client login  -->
 <AccountWrapper>
   <Component {...pageProps} />
 </AccountWrapper>
@@ -40,15 +40,16 @@ warpper account
 layout.js
 ```js
 import AccountProvider from '../components/providers/AccountProvider'
-<!-- web 3 wallet for blockchian -->
+// web 3 wallet for blockchian 
 import WalletProvider from '../components/providers/WalletProvider'
 ```
 
 ```jsx
 <div>
-// web 3 wallet for blockchian 
+
+web 3 wallet for blockchian 
   <WalletProvider />
-// user Account for client login 
+  {/*  user Account for client login  */}
   <AccountWrapper>
     {children}
   </AccountWrapper>
